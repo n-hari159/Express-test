@@ -1,17 +1,27 @@
 {
-    "name": "expresstest",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "start": "node index.js"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "express": "^4.16.4"
-    },
-    "engines": {
-        "node": "10.x"
-    }
+  "name": "expresstest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n-hari159/test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/n-hari159/test/issues"
+  },
+  "homepage": "https://github.com/n-hari159/test#readme",
+  "description": ""
 }
