@@ -1,0 +1,37 @@
+var express = require('express');
+var app = express();
+
+
+//var serveIndex = require('serve-index')
+//Implement Serve Index for directory listing like Apache
+
+
+
+// Fetch index file automatically
+// app.use(express.static(__dirname + '/static'));
+
+// Fetching particular file instead of index file in static folder
+
+app.get('/', function(req, res) {
+    res.sendFile(__dirname + '/static/test.html');
+});
+
+app.use(express.static(__dirname + '/static')); //Serves all requests in static that are hyperlinks in test.html file
+
+
+// app.get('/', function(req,res,next){
+//     res.send('one');
+//     next();
+// }, function(req,res,next){
+//    console.log("t20");
+//    next();
+// });
+
+// app.get('/a', function(req,res){
+//     res.send('two');
+// });
+
+app.listen(3000, function(err) {
+    if (err) throw err;
+    console.log("Server is running");
+});
